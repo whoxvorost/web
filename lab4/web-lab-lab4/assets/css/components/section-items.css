@@ -1,0 +1,163 @@
+.section-items{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 0 var(--contpadding) 30px;
+}
+
+.sort-div {
+
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        color: #202336;
+        padding: 0 0 40px 0;
+    }
+
+    label{
+        font-size: 21px;
+        color: #202336;
+        padding: 0 20px 0 0;
+        font-weight: 600;
+    }
+
+    select{
+        border: 1px solid var(--grey);
+        border-radius: 6px;
+        padding: 0 21px;
+        width: 200px;
+        height: 40px;
+        appearance: none;
+    }
+
+    form{
+        display: flex;
+        align-items: center;
+        padding: 0 0 20px 0;
+    }
+}
+
+.item-manager{
+    border-right: 2px solid #C4C4C4;
+    padding-right: 15px;
+    width: 35svw;
+
+    hr{
+        width: 100%;
+        height: 1px;
+        color: #C4C4C4;
+        margin: 10px 0;
+    }
+}
+
+
+.count-div{
+    padding: 20px 0 0 0;
+
+    h1 {
+        font-size: 25px;
+        font-weight: 600;
+        color: #202336;
+        padding: 0 0 25px 0;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.item-count-button{
+    border: 1px solid #53abe3;
+    background: none;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 15px 46px;
+    color: #53abe3;
+    width: 50%;
+    cursor: pointer;
+}
+
+.count-div output{
+    font-size: 20px;
+}
+
+.items-wrapper {
+    display: flex;
+    gap: 3%;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 20px;
+    /* background-color: blue; */
+}
+
+.item {
+    width: 31%;
+    min-width: 200px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 15px;
+    border: 1px solid var(--grey);
+
+    .avatar {
+        width: 100%;
+        aspect-ratio: 1.3;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .info {
+        width: 90%;
+        height: 30%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .h6 {
+            font-weight: 300;
+            color: var(--grey);
+            line-height: 130%;
+
+        }
+
+        .h5 {
+            font-weight: 300;
+            color: var(--grey);
+            opacity: 0.8;
+        }
+    }
+
+    .manage {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 45%;
+            padding: 10px 0;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:first-child {
+            background: var(--blue-grad);
+            color: var(--white);
+        }
+
+        button:last-child {
+            background-color: rgb(236, 61, 61);
+            color: var(--white);
+        }
+
+    }
+
+
+}

@@ -1,0 +1,122 @@
+@import url(vars.css);
+@import url(components/header.css);
+@import url(components/first_screen.css);
+@import url(components/last_articles.css);
+@import url(components/feedbacks.css);
+@import url(components/footer.css);
+@import url(components/section-menu.css);
+@import url(components/section-items.css);
+@import url(components/popup.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+    font-feature-settings: 'liga' off, 'clig' off;
+}
+
+body {
+    min-height: 100svh;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 9px;
+    background-color: #aaaaac;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F3F8FE;
+}
+
+.blue-btn {
+    display: block;
+    width: fit-content;
+    padding: clamp(0.625rem, 0.446rem + 0.893vw, 1.25rem) clamp(1.25rem, 0.893rem + 1.786vw, 2.5rem);
+    background: none;
+    border: 1px solid var(--blue);
+    border-radius: 40px;
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all var(--base-tr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
+
+    &.small {
+        padding: 10px 40px;
+    }
+
+    &.pure {
+        border: none;
+    }
+
+    img {
+        transition: all var(--base-tr);
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--blue);
+            color: var(--white);
+
+            img {
+                filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(695%) hue-rotate(204deg) brightness(115%) contrast(100%);
+            }
+        }
+    }
+    @media (hover: none) {
+        .blue-btn {
+            background: var(--blue);
+            color: var(--white);
+        }
+    }
+
+}
+
+.h2 {
+    font-size: clamp(1.4rem, 0.571rem + 2.143vw, 4rem); /*36px*/
+    font-weight: 700;
+}
+
+.h3 {
+    font-size: clamp(1.2rem, 0.257rem + 1.214vw, 2.2rem); /*21px*/
+}
+
+.h4 {
+    font-size: clamp(1rem, 0.171rem + 1.143vw, 2rem);  /*18px*/
+    line-height: 150%;
+}
+
+.h6 {
+    font-size: clamp(0.8rem, 0.458rem + 0.714vw, 1.6rem); /*14px*/
+    line-height: 180%;
+}
+
+.h7 {
+    font-size: clamp(0.8rem, 0.171rem + 1.143vw, 2rem);  /*18px*/
+}
+
+/* br tablet */
+@media (max-width: 1270px) {
+
+}
+
+/* br mobile */
+@media (max-width: 767px) {
+
+}
+
+@media (hover: hover) {
+
+}

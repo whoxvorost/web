@@ -1,0 +1,49 @@
+footer {
+    position: relative;
+    padding: 50px var(--contpadding);
+    background: var(--blue-grad);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    z-index: -1;
+
+    .dots {
+        position: absolute;
+        left: -20px;
+        bottom: -20px;
+    }
+
+    nav {
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: var(--white);
+
+            @media (hover: hover) {
+                &:hover {
+                    color: rgba(255, 255, 255, 0.7);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    /* br mobile */
+    @media (max-width: 585px) {
+        flex-direction: column;
+        row-gap: 20px;
+
+        .dots {
+            width: 25svw;
+            height: auto;
+        }
+        nav {
+            width: 60%;
+        }
+    }
+}

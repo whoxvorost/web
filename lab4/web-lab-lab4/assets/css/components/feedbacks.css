@@ -1,0 +1,187 @@
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    padding: clamp(2.5rem, 0.714rem + 8.929vw, 8.75rem) var(--contpadding);
+    background-color: var(--light-blue);
+    
+
+    .slider {
+        width: 80%;
+        padding: clamp(1.875rem, 1.518rem + 1.786vw, 3.125rem) 0;
+        background: var(--blue-grad);
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        transform: translateY(10svh);
+        opacity: 0;
+
+        .line {
+            width: 56px;
+            height: 2px;
+            background-color: var(--white);
+            margin-bottom: clamp(1.875rem, 1.518rem + 1.786vw, 3.125rem);
+        }
+
+        .feedback {
+            --child-width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+
+            .bio {
+                width: var(--child-width);
+                display: flex;
+                align-items: center;
+                column-gap: 30px;
+
+                .logo {
+                    
+                    width: 20%;
+                    min-width: 140px;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                    border: 4px solid var(--white);
+                    background-image: url(../../img/avatar.webp);
+                    background-size: contain;
+                }
+
+                h3 {
+                    font-weight: 600;
+                    color: var(--white);
+                    margin-bottom: 8px;
+                }
+
+                h4 {
+                    font-weight: 400;
+                    color: var(--white);
+                    opacity: 0.8;
+                    letter-spacing: 1px;
+                }
+                
+            }
+
+            h5 {
+                width: var(--child-width);
+                color: var(--white);
+                opacity: 0.9;
+                letter-spacing: 2px;
+                font-weight: 300;
+
+            }
+        }
+
+        h2 {
+            color: var(--white);
+            margin-bottom: clamp(1rem, 0.821rem + 0.893vw, 1.625rem);
+            text-align: center;
+        }
+
+        
+    
+    }
+
+    .pagination {
+        display: flex;
+        align-items: center;
+        column-gap: 90px;
+        justify-content: space-between;
+
+        img {
+            height: 20px;
+            width: auto;
+            cursor: pointer;
+        }
+
+        img:first-child {
+            transform: rotate(180deg);
+            opacity: 0.4;
+            transition: all var(--base-tr);
+
+            @media (hover: hover) {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        & > div {
+            display: flex;
+            column-gap: 18px;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--lighter-blue);
+            cursor: pointer;
+            transition: all var(--base-tr);
+
+            &:not(:first-child) {
+                opacity: 0.4;
+            }
+
+            @media (hover: hover) {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    
+    /* br tablet */
+    @media (max-width: 1200px) {
+
+        .slider {
+            width: 90%;
+
+            .feedback {
+                --child-width: 70%;
+                flex-direction: column;
+                row-gap: 40px;
+
+                .bio {
+                    align-items: center;
+                    justify-content: center;
+
+                    .logo {
+                        min-width: 60px;
+                    }
+                }
+
+                
+            }
+
+            h2 {
+                width: 80%;
+                font-size: clamp(1rem, 0.257rem + 1.214vw, 2.2rem);
+            }
+        }
+
+    }
+
+    /* br mobile */
+    @media (max-width: 484px) {
+
+        .pagination {
+            column-gap: 45px;
+            img {
+                height: 14px;
+            }
+
+            .dot {
+                width: 6px;
+                height: 6px;
+                
+            }
+        }
+
+    }
+
+}
+

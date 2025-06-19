@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trafalgar</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="desktop-nav">
+            <a href="index.html" class="h6">Home</a>
+            <a href="find_a_doctor.html" class="active h6">Find a doctor</a>
+            <a href="/" class="h6">Apps</a>
+            <a href="/" class="h6">Testimonials</a>
+            <a href="/" class="h6">About us</a>
+        </nav>
+        <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="find_a_doctor.html"><li>Find a doctor</li></a>
+                <a href="#"><li>Apps</li></a>
+                <a href="#"><li>Testimonials</li></a>
+                <a href="#"><li>About us</li></a>
+              </ul>
+            </div>
+          </nav>
+        <img class="logo" src="assets/img/logo.svg" alt="Trafalgar"/>
+    </header>
+    <main>
+        <section class="section-menu">
+            <div id="createPopup" class="overlay">
+                <div class="popup">
+                    <div class="popup__panel">
+                        <h2>Create a doctor</h2>
+                        <button class="close">&times;</button>
+                    </div>
+                    <div class="content">
+                        <form class="create-form" onsubmit="return false">
+                            <label>
+                                <span>Title</span>
+                                <input required type="text" placeholder="Text..." class="title-create-input" maxlength="25" id="title-modal">
+                            </label>
+                            <label>
+                                <span>Description</span>
+                                <textarea required class="description-create-input" id="description-modal"></textarea>
+                            </label>
+                            <label>
+                                <span>Price ($)</span>
+                                <input required id="price-modal" type="number" min="0" placeholder="Number..." class="price-create-input">
+                            </label>
+                            <label>
+                                <input type="file" id="image-modal" accept=".jpg, .jpeg, .png">
+                                <span class="error"></span>
+                            </label>
+                            <label>
+                                <button class="create-modal-button" type="submit" id="submit-create-button">Submit</button>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="create">
+                <button class="create-button">Create a doctor</button>
+            </div>
+            <div class="search-menu" id="search-menu">
+                <form>
+                    <label class="input-buttons-menu">
+                        <input placeholder="Type something...">
+                        <label class="buttons-menu">
+                            <button type="submit" class="search"><span>Search</span><img src="assets/img/search_button.svg" alt="Search"></button>
+                            <button type="reset" class="clear"><span>Clear</span><img src="assets/img/clear_button.svg" alt="Clear"></button>
+                        </label>
+                    </label>
+                </form>
+            </div>
+
+        </section>
+        <section class="section-items">
+            <div class="item-manager">
+                <div class="sort-div">
+                    <h1>Manage Doctors</h1>
+                    <form>
+                        <label for="sort"> Sort by: </label>
+                        <select class="sort-select" name="sort" id="sort">
+                                <option selected disabled hidden>Choose one...</option>
+                                <option>Price</option>
+                                <option>Name</option>
+                        </select>
+                    </form>
+                </div>
+                <hr>
+                <div class="count-div">
+                    <h2>Count price</h2>
+                    <form>
+                        <label>
+                            <button type="submit" class="item-count-button">Count</button>
+                            <output>Total: <span id="total_price"></span></output>
+                        </label>
+                    </form>
+                </div>
+            </div>
+
+            <div id="ItemsWrappper" class="items-wrapper">
+                <template class="item-template">
+                    <div class="item">
+                        <div class="avatar"></div>
+                        <div class="info">
+                            <h3 class="h3">some text</h3>
+                            <h4 class="h6">some text2</h4>
+                            <h5 class="h5">3 minutes ago</h5>
+                            <h6 class="h6"></h6>
+                        </div>
+                        <div class="manage">
+                            <button class="edit-doctor">Edit</button>
+                            <button class="remove-doctor">Remove</button>
+                        </div>
+                    </div> 
+                </template>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <img src="assets/img/white_logo.svg"/>
+        <nav>
+            <a href="/" class="h4">Company</a>
+            <a href="/" class="h4">Region</a>
+            <a href="/" class="h4">Help</a>
+        </nav>
+        <img class="dots" src="assets/img/dots.svg"/>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundle.min.js"></script>
+    <script src="assets/js/draw_doctors.js" type="module"></script>
+
+</body>
+</html>
