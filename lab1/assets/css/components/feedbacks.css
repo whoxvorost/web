@@ -1,0 +1,130 @@
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    padding: 140px var(--contpadding);
+    background-color: var(--light-blue);
+
+    .slider {
+        padding: 80px 0;
+        background: var(--blue-grad);
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .line {
+            width: 56px;
+            height: 2px;
+            background-color: var(--white);
+            margin-bottom: 80px;
+        }
+
+        .feedback {
+            --child-width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+
+            .bio {
+                width: var(--child-width);
+                display: flex;
+                align-items: center;
+                column-gap: 30px;
+
+                .logo {
+                    
+                    width: 20%;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                    border: 4px solid var(--white);
+                    background-image: url(../../img/avatar.webp);
+                    background-size: contain;
+                }
+
+                h3 {
+                    font-weight: 600;
+                    color: var(--white);
+                    margin-bottom: 8px;
+                }
+
+                h4 {
+                    font-weight: 400;
+                    color: var(--white);
+                    opacity: 0.8;
+                    letter-spacing: 1px;
+                }
+                
+            }
+
+            h5 {
+                width: var(--child-width);
+                color: var(--white);
+                opacity: 0.9;
+                letter-spacing: 2px;
+                font-weight: 300;
+
+            }
+        }
+
+        h2 {
+            color: var(--white);
+            margin-bottom: 26px;
+        }
+
+        
+    
+    }
+
+    .pagination {
+        display: flex;
+        align-items: center;
+        column-gap: 90px;
+        justify-content: space-between;
+
+        img {
+            height: 20px;
+            width: auto;
+            cursor: pointer;
+        }
+
+        img:first-child {
+            transform: rotate(180deg);
+            opacity: 0.4;
+            transition: all var(--base-tr);
+
+            @media (hover: hover) {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        & > div {
+            display: flex;
+            column-gap: 18px;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--lighter-blue);
+            cursor: pointer;
+            transition: all var(--base-tr);
+
+            &:not(:first-child) {
+                opacity: 0.4;
+            }
+
+            @media (hover: hover) {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+}
+

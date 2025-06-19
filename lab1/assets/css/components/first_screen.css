@@ -1,0 +1,56 @@
+.first-screen {
+    padding: 0 calc(2 * var(--contpadding)) 0 var(--contpadding);
+    height: calc(100svh - var(--header-h));
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .info {
+        width: 28%;
+        height: 60%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        button {
+            img {
+                margin-left: 4px;
+                transform: rotate(90deg);
+            }
+        }
+
+        div {
+            width: 56px;
+            height: 2px;
+            background-color: var(--black);
+        }
+
+        h2 {
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            color: var(--grey);
+            letter-spacing: 1.5px;
+        }
+
+
+    }
+
+    .img-container {
+        position: relative;
+        width: 42%;
+        aspect-ratio: 1.53;
+        background-image: url(../../img/intro.webp);
+        background-size: contain;
+
+        img {
+            position: absolute;
+            right: -20%;
+            bottom: -15%;
+
+        }
+    }
+}

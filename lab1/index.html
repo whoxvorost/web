@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trafalgar</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="active">Home</a>
+            <a href="/">Find a doctor</a>
+            <a href="/">Apps</a>
+            <a href="/">Testimonials</a>
+            <a href="/">About us</a>
+        </nav>
+        <img src="assets/img/logo.svg" alt="Trafalgar"/>
+    </header>
+    <main>
+        <section class="first-screen">
+            <div class="info">
+                <h2 class="h2">Download our mobile apps</h2>
+                <div></div>
+                <h3 class="h4">Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedious form, long calls, or administrative hassle) and securely</h3>
+                <button class="blueBtn h4">Download <img src="assets/img/arrow.svg" alt="→"/></button>
+            </div>
+            <div class="img-container">
+                <img src="assets/img/dots.svg"/>
+            </div>
+
+        </section>
+        <section class="last-articles">
+            <h2 class="h2">Check out our lastest article</h2>
+            <div class="line"></div>
+            <div class="articles">
+                <div class="article">
+                    <img src="assets/img/article1.webp" alt="article 1"/>
+                    <h3 class="h3">Disease detection, check up in the laboratory</h3>
+                    <h4 class="h4">In this case, the role of the health laboratory is very important to do a disease detection...</h4>
+                    <button class="blueBtn h6">Read more <img src="assets/img/arrow.svg" alt="→"/></button>
+                </div>
+                <div class="article">
+                    <img src="assets/img/article2.webp" alt="article 1"/>
+                    <h3 class="h3">Herbal medicines that are safe for consumption</h3>
+                    <h4 class="h4">Herbal medicine is very widely used at this time because of its very good for your health...</h4>
+                    <button class="blueBtn h6">Read more <img src="assets/img/arrow.svg" alt="→"/></button>
+                </div>
+                <div class="article">
+                    <img src="assets/img/article3.webp" alt="article 1"/>
+                    <h3 class="h3">Natural care for healthy facial skin</h3>
+                    <h4 class="h4">A healthy lifestyle should start from now and also for your skin health. There are some...</h4>
+                    <button class="blueBtn h6">Read more <img src="assets/img/arrow.svg" alt="→"/></button>
+                </div>               
+            </div>
+            <button class="blueBtn small h6">View all</button>
+            <img class="bubble" src="assets/img/bubble.svg" alt="bubble"/>
+        </section>
+        <section class="feedbacks">
+            <div class="slider">
+                <h2 class="h2">What our customers are saying</h2>
+                <div class="line"></div>
+                <div class="feedback">
+                    <div class="bio">
+                        <div class="logo"></div>
+                        <div class="fio">
+                            <h3 class="h3">Edward Newgate</h3>
+                            <h4 class="h6">Founder Circle</h4>
+                        </div>
+                    </div>
+                    <h5 class="h6">"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedious form, long calls, or administrative hassle) and securely"</h3>
+                </div>
+            </div>
+            <div class="pagination">
+                <img src="assets/img/arrow.svg" alt="→"/>
+                <div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <img src="assets/img/arrow.svg" alt="→"/>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="assets/img/white_logo.svg"/>
+        <nav>
+            <a href="/" class="h4">Company</a>
+            <a href="/" class="h4">Region</a>
+            <a href="/" class="h4">Help</a>
+        </nav>
+        <img class="dots" src="assets/img/dots.svg"/>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundle.min.js"></script>
+
+    <script>
+        // Initialize Lenis
+        const lenis = new Lenis()
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+</body>
+</html>

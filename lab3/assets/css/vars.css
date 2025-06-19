@@ -1,0 +1,16 @@
+:root {
+    --white: white;
+    --light-blue: #F3F8FE;
+    --lighter-blue: #5B9BF3;
+    --blue: #458FF6;
+    --grey: #7D7987;
+    --base-black: rgba(31, 21, 52, 1);
+    --black: black;
+    --blue-grad: linear-gradient(208deg, #67C3F3 9.05%, #5A98F2 76.74%);
+
+   
+    --header-h: clamp(3.75rem, 2.143rem + 8.036vw, 9.375rem);
+    --base-tr: 0.3s ease-in-out;
+    --contpadding: clamp(1rem, -3.919rem + 10.262vw, 12.5rem);
+
+}
