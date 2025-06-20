@@ -4,7 +4,7 @@ let mm = gsap.matchMedia();
 
 gsap.to(".first-screen .h2", {opacity: 1, x: 0, duration: .6 });
 
-// desktop anim
+
 mm.add('(min-width: 878px)', () => {
     gsap.to(".first-screen .img-container", { opacity: 1, x: 0, duration: .5 });
 })
