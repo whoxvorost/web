@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Disease detection, check up in the laboratory",
+    "description": "In this case, the role of the health laboratory is very important to do a disease detection...",
+    "picture": "article1"
+  },
+  {
+    "id": 2,
+    "title": "Herbal medicines that are safe for consumption",
+    "description": "Herbal medicine is very widely used at this time because of its very good for your health...",
+    "picture": "article2"
+  },
+  {
+    "id": 3,
+    "title": "Natural care for healthy facial skin",
+    "description": "A healthy lifestyle should start from now and also for your skin health. There are some...",
+    "picture": "article3"
+  },
+  {
+    "id": 4,
+    "title": "The benefits of regular exercise",
+    "description": "Regular exercise is essential for maintaining physical and mental health...",
+    "picture": "article4"
+  },
+  {
+    "id": 5,
+    "title": "Healthy eating habits",
+    "description": "Adopting healthy eating habits can significantly improve your overall well-being...",
+    "picture": "article5"
+  },
+  {
+    "id": 6,
+    "title": "The importance of mental health",
+    "description": "Mental health is just as important as physical health. Learn how to take care of it...",
+    "picture": "article6"
+  },
+  {
+    "id": 7,
+    "title": "Tips for a balanced diet",
+    "description": "A balanced diet is crucial for maintaining good health. Here are some tips...",
+    "picture": "article7"
+  },
+  {
+    "id": 8,
+    "title": "Understanding different types of diets",
+    "description": "There are various types of diets, each with its own benefits and drawbacks...",
+    "picture": "article8"
+  },
+  {
+    "id": 9,
+    "title": "The role of hydration in health",
+    "description": "Staying hydrated is vital for your body to function properly. Learn more about it...",
+    "picture": "article9"
+  }
+]

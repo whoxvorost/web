@@ -1,7 +1,6 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, PositiveInt
+from typing import Optional
 from datetime import datetime
-from pydantic import PositiveInt
-
 
 class DoctorBase(BaseModel):
     name: str
@@ -9,13 +8,11 @@ class DoctorBase(BaseModel):
     updated_at: datetime
     price: PositiveInt
     picture: str
-    country: str
-    rate: float
-
+    country: Optional[str]  # ← дозволити None
+    rate: Optional[float]   # ← дозволити None
 
 class Doctor(DoctorBase):
     doctor_id: int
-
 
 class DoctorsTotalPrice(BaseModel):
     total_price: int

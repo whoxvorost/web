@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Dr. Salam Popolam",
+    "description": "Very good. He is pro of destroying python circles",
+    "updated_at": "2024-10-03T21:38:54.593000Z",
+    "price": 69,
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVzssqvBmL0wfFJt_9ts-KNRy3hW36jj93QA&s",
+    "doctor_id": 2,
+    "rating": 4.5,
+    "location": "Ukraine"
+  },
+  {
+    "name": "Dr. Salam Lolopam",
+    "description": "Cardiologist with expertise in treating heart diseases and conditions.",
+    "updated_at": "2024-10-03T22:20:27.906000Z",
+    "price": 42,
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4OJMR-gYDLao4PDhR-P5sjEbR-uuTY5vMqQ&s",
+    "doctor_id": 7,
+    "rating": 4.8,
+    "location": "Poland"
+  },
+  {
+    "name": "Dr. Mastur Beast",
+    "description": "He is acknowledged (he sharit v ziy temi)",
+    "updated_at": "2024-10-04T19:36:33.078000Z",
+    "price": 192,
+    "picture": "https://img.tsn.ua/cached/914/tsn-e596772b039de3f9cc99cecfb6e26c38/thumbs/428x268/22/32/e7bd0a5522e31d0db2f887a79ddb3222.jpg",
+    "doctor_id": 3,
+    "rating": 4.6,
+    "location": "USA"
+  },
+  {
+    "name": "Dr. Elsa Jean",
+    "description": "We put our best efforts, heart and soul into our work, striving to give our customers the highest quality.",
+    "updated_at": "2024-10-04T20:13:21.360000Z",
+    "price": 122,
+    "picture": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/3ab4bd00-706a-47aa-ab73-9a02e77c11ac/width=450/ComfyUI_temp_uzgcf_00007_.jpeg",
+    "doctor_id": 9,
+    "rating": 3.7,
+    "location": "Ukraine"
+  },
+  {
+    "name": "Dr. Aisha Khan",
+    "description": "Experienced general physician specializing in internal medicine.",
+    "updated_at": "2024-10-05T08:58:42.016000Z",
+    "price": 140,
+    "picture": "https://s3-eu-west-1.amazonaws.com/intercare-web-public/wysiwyg-uploads%2F1698752331464-pexels-tessy-agbonome-18828741-min.jpg",
+    "doctor_id": 1,
+    "rating": 2.9,
+    "location": "Poland"
+  },
+  {
+    "name": "Dr. Mr. Proper",
+    "description": "Mr. Clean is a brand name and mascot owned by Procter & Gamble.",
+    "updated_at": "2024-10-05T09:05:11.208000Z",
+    "price": 148,
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQessajFGlfsaMHQPc5N_NLTpyQecw-1ZVlbg&s",
+    "doctor_id": 11,
+    "rating": 4.4,
+    "location": "USA"
+  },
+  {
+    "name": "Dr. House",
+    "description": "is an unconventional, misanthropic, cynical medical genius",
+    "updated_at": "2024-10-05T09:12:23.366000Z",
+    "price": 329,
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAZLlk4lzSXCHRnk0FXZSSnfJartZStlrwYA&s",
+    "doctor_id": 10,
+    "rating": 1.3,
+    "location": "Ukraine"
+  }
+]

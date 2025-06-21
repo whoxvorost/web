@@ -1,0 +1,157 @@
+:root {
+  --white: white;
+  --light-blue: #F3F8FE;
+  --lighter-blue: #5B9BF3;
+  --blue: #458FF6;
+  --grey: #7D7987;
+  --base-black: rgba(31, 21, 52, 1);
+  --black: black;
+    --red: #FF5A5A;
+  --blue-grad: linear-gradient(208deg, #67C3F3 9.05%, #5A98F2 76.74%);
+
+  --header-h: clamp(3.75rem, 2.143rem + 8.036vw, 9.375rem);
+  --base-tr: 0.3s ease-in-out;
+  --contpadding: clamp(1rem, -3.919rem + 10.262vw, 12.5rem);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  font-feature-settings: 'liga' off, 'clig' off;
+}
+
+body {
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9px;
+  background-color: #aaaaac;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F3F8FE;
+}
+
+.error {
+  color: var(--red);
+}
+
+.blue-btn {
+  width: fit-content;
+  padding: clamp(0.625rem, 0.446rem + 0.893vw, 1.25rem) clamp(1.25rem, 0.893rem + 1.786vw, 2.5rem);
+  background: none;
+  border: 1px solid var(--blue);
+  border-radius: 40px;
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--base-tr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6px;
+
+  &.small {
+    padding: 10px 40px;
+  }
+
+  &.pure {
+    border: none;
+  }
+
+  img {
+    transition: all var(--base-tr);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--blue);
+      color: var(--white);
+
+      img {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(695%) hue-rotate(204deg) brightness(115%) contrast(100%);
+      }
+    }
+  }
+  @media (hover: none) {
+    .blue-btn {
+      background: var(--blue);
+      color: var(--white);
+    }
+  }
+
+}
+
+.doctor-popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  input, textarea {
+    padding: 2px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 20px;
+  }
+
+  button {
+    align-self: center;
+  }
+}
+
+
+
+.h2 {
+  font-size: clamp(1.4rem, 0.571rem + 2.143vw, 4rem); /*36px*/
+  font-weight: 700;
+}
+
+.h3 {
+  font-size: clamp(1.2rem, 0.257rem + 1.214vw, 2.2rem); /*21px*/
+}
+
+.h4 {
+  font-size: clamp(1rem, 0.171rem + 1.143vw, 2rem);  /*18px*/
+  line-height: 150%;
+}
+
+.h6 {
+  font-size: clamp(0.8rem, 0.458rem + 0.714vw, 1.6rem); /*14px*/
+  line-height: 180%;
+}
+
+.h7 {
+  font-size: clamp(0.8rem, 0.171rem + 1.143vw, 2rem);  /*18px*/
+}
+
+/* br tablet */
+@media (max-width: 1270px) {
+
+}
+
+/* br mobile */
+@media (max-width: 767px) {
+
+}
+
+@media (hover: hover) {
+
+}
