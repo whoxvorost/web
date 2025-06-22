@@ -1,0 +1,52 @@
+.last-articles {
+  overflow: hidden;
+  position: relative;
+  padding: clamp(2.5rem, 0.714rem + 8.929vw, 8.75rem) var(--contpadding) clamp(2.5rem, 0.714rem + 8.929vw, 8.75rem) var(--contpadding);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+
+
+  }
+
+  .line {
+    width: 56px;
+    height: 2px;
+    background-color: var(--black);
+    margin-bottom: 70px;
+  }
+
+  .bubble {
+    width: 20svw;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    right: -5%;
+    z-index: -1;
+  }
+
+  .dots {
+    position: absolute;
+    top: 15svh;
+    left: 8svw;
+    z-index: -1;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 757px) {
+    .articles {
+      flex-direction: column;
+      align-items: center;
+
+    }
+  }
+}

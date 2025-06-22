@@ -1,0 +1,10 @@
+.cart {
+  min-height: calc(100svh - var(--header-h) - 141px);
+}
+
+.carts-wrapper {
+  display: flex;
+  gap: 20px;
+    flex-wrap: wrap;
+  //grid-template-columns: repeat(2, 1fr);
+}
